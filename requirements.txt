@@ -1,0 +1,63 @@
+# =============================================================================
+# DocIntel Dependencies
+# =============================================================================
+# Pin all versions for reproducible builds
+# Run: pip install -r requirements.txt
+# =============================================================================
+
+# --- Web Framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# --- LLM & Embeddings ---
+openai==1.82.0
+tiktoken==0.9.0
+
+# --- Vector Database ---
+qdrant-client==1.13.3
+
+# --- Redis (Caching) ---
+redis==5.2.1
+
+# --- Document Processing ---
+pypdf==5.4.0
+python-magic==0.4.27
+markdown==3.7
+beautifulsoup4==4.13.4
+
+# --- NLP & Text Processing ---
+nltk==3.9.1
+rank-bm25==0.2.2
+sentence-transformers==4.1.0
+
+# --- Data Validation ---
+pydantic==2.11.1
+pydantic-settings==2.8.1
+
+# --- Observability ---
+structlog==25.1.0
+prometheus-client==0.22.1
+
+# --- Security ---
+python-jose[cryptography]==3.4.0
+passlib[bcrypt]==1.7.4
+slowapi==0.1.9
+
+# --- Testing ---
+pytest==8.3.5
+pytest-asyncio==0.25.3
+pytest-cov==6.1.1
+httpx==0.28.1
+
+# --- Code Quality ---
+ruff==0.11.12
+mypy==1.15.0
+
+# --- Security Scanning ---
+bandit==1.9.0
+safety==3.3.1
+
+# --- Utilities ---
+python-dotenv==1.1.0
+numpy==2.2.6

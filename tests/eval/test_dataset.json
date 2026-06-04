@@ -1,0 +1,66 @@
+{
+    "description": "Evaluation dataset for DocIntel RAG pipeline. Each case has a query, expected relevant chunk IDs, and optional reference answer.",
+    "version": "1.0.0",
+    "cases": [
+        {
+            "query": "What is the company's annual revenue for 2024?",
+            "expected_chunk_ids": [
+                "doc1-chunk-3",
+                "doc1-chunk-4"
+            ],
+            "expected_answer": "The company reported $2.4 billion in annual revenue for fiscal year 2024.",
+            "tags": [
+                "factual",
+                "single-hop"
+            ]
+        },
+        {
+            "query": "Who is the CEO and when were they appointed?",
+            "expected_chunk_ids": [
+                "doc1-chunk-1",
+                "doc2-chunk-7"
+            ],
+            "expected_answer": "Jane Smith was appointed CEO in March 2022.",
+            "tags": [
+                "factual",
+                "multi-hop"
+            ]
+        },
+        {
+            "query": "What are the main risk factors mentioned in the report?",
+            "expected_chunk_ids": [
+                "doc3-chunk-12",
+                "doc3-chunk-13",
+                "doc3-chunk-14"
+            ],
+            "expected_answer": null,
+            "tags": [
+                "summarization",
+                "multi-chunk"
+            ]
+        },
+        {
+            "query": "Compare Q1 and Q2 performance metrics",
+            "expected_chunk_ids": [
+                "doc2-chunk-5",
+                "doc2-chunk-8"
+            ],
+            "expected_answer": null,
+            "tags": [
+                "comparison",
+                "multi-hop"
+            ]
+        },
+        {
+            "query": "What is the employee retention rate?",
+            "expected_chunk_ids": [
+                "doc4-chunk-2"
+            ],
+            "expected_answer": "The employee retention rate is 94% as of December 2024.",
+            "tags": [
+                "factual",
+                "single-hop"
+            ]
+        }
+    ]
+}

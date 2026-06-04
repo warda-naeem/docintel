@@ -1,0 +1,66 @@
+# Environment & Secrets
+.env
+.env.local
+.env.production
+*.pem
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Logs
+logs/
+*.log
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploaded files (processed locally)
+uploads/
+temp/
+
+# Eval results (generated, not committed)
+docs/eval-results/*.json
+!docs/eval-results/.gitkeep
